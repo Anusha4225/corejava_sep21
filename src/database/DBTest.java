@@ -1,6 +1,7 @@
 package database;
 
 import java.sql.SQLException;
+
 import java.sql.Statement;
 import java.sql.CallableStatement;
 import java.sql.ResultSet;
@@ -18,11 +19,11 @@ public class DBTest {
 		Statement statement = dbObj.getConnection().createStatement();
 		
 		CallableStatement statement1 = dbObj.getConnection().prepareCall("{call add_product(?, ?)}");
-		//statement.executeUpdate("insert into eproduct (name, price, date_added) values('mobile',9000.00,now())");
+		//statement.executeUpdate("insert into eproduct (name, price, date_added) values('desktop',9000.00,now())");
 		
-		//statement.executeUpdate("create database mydatabase");
+		//statement.executeUpdate("create database mydatabase2");
 		//statement.executeUpdate("drop database mydatabase");
-		//statement.executeUpdate("update eproduct set ID=3 where name='mobile'");
+		//statement.executeUpdate("update eproduct set ID=4 where name='desktop'");
 		
 		
 		statement1.setString(1, "Washing Machine");
