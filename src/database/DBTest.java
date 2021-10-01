@@ -26,10 +26,10 @@ public class DBTest {
 		//statement.executeUpdate("update eproduct set ID=4 where name='desktop'");
 		
 		
-		statement1.setString(1, "Washing Machine");
-        statement1.setInt(2, 5000);
+		//statement1.setString(1, "Washing Machine");
+       // statement1.setInt(2, 5000);
         
-        statement1.executeUpdate();
+        //statement1.executeUpdate();
 		
 		ResultSet result = statement.executeQuery("select * from eproduct");
 		
